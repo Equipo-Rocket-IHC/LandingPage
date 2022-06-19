@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.Dentista{
+    background-image: linear-gradient(120deg, rgba(161, 196, 253, 0.674) 0%, rgba(194, 233, 251, 0.756) 100%), url("Fondo.jpg");
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position:relative;
+    overflow: hidden;
+}
+
+.TextosDentista{
+    height: 500px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.TextosDentista h1{
+    font-size: 60px;
+}
+.TextosDentista p{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.TextosDentista a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 15px;
+    background: #a18cd1;
+    border-radius: 8px;
+    color: aliceblue;
+}
+
+.FondoPaciente{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+}
+
+.contenedor,
+.wave-contenedor{
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+    padding: 0 0 80px 0;
+}
+.contenedor{
+    padding: 80px 0 ;
+}
+
+.titulo{
+    font-weight: 300;
+    font-size: 35px;
+    text-align: center;
+}
+
+.titulo.left{
+    text-align: left;
+}
+.titulo.right{
+    text-align: right;
+}
+
+.website{
+    display: flex;
+    justify-content: center;
+
+}
+.website img{
+    width: 48%;
+}
+.website .contenedor-textos-main{
+    width: 40%;
+}
+.parrafo{
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.cta{
+    display: inline-block;
+    text-decoration: none;
+    background-image: linear-gradient(45deg, rgba(161, 196, 253, 1) 0%, rgb(86, 145, 240), #000000 100%);
+    padding: 12px 15px;
+    border-radius: 8px;
+    color:#a18cd1
+}
+
+.info{
+    background-color: #399cb3;
+}
+
+.content-cards{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 80%;
+    text-align: center;
+    height: 300px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
+    transform: scale(1);
+    transition: transform 0.6s;
+}
+
+.card:hover{
+    box-shadow: 0 0 6px 0 rgba(0,0,0, .5);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.card i{
+    margin: 30px 0 20px 0;
+    color: #beb2dd;
+    font-size: 50px;
+}
+.card p{
+    font-weight: 300;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.galeria{
+    background: #399cb3;
+}
+.galeria-cont{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+.galeria-cont>img{
+    width: 30%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    display: block;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .5);
+}
+
+.last-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+.last-section img{
+    width: 48%;
+}
+.last-section .contenedor-textos-main{
+    width: 40%;
+}
+.last-section h2{
+    text-align: center;
+}
+.last-section p{
+    text-align: left;
+}
+
+
+footer{
+    background: #399cb3;
+    color: aliceblue;
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input{
+    background: transparent;
+    border:0;
+    color: aliceblue;
+    outline: none;
+    border: 1px solid aliceblue;
+    padding: 20px 10px;
+}
+
+.input::placeholder{
+    color: aliceblue;
+    font-family: 'roboto', 'sans-serif';
+}
+
+input[type="text"],
+input[type="Email"]{
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 30px;
+}
+
+.form textarea{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+input[type="submit"]{
+    width: 120px;
+    text-align: center;
+    padding: 14px 0;
+}input[type="submit"]:hover{
+   cursor: pointer;
+   color: tomato;
+   background: #e4ddf3;
+}
+
+.Descargas p{
+    text-align: center;
+}
+
+.Descarga-Link{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+.Descarga-Link>img{
+    width: 30%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    display: block;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .5);
+}
